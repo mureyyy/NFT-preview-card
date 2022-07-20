@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* RESETS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+}
+
+
+.card{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    padding: 1.2rem;
+}
+
+
+.img-container{
+    margin-bottom: 1rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: hsl(178, 100%, 50%);
+    overflow: hidden;
+}
+
+
+.eq-img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+.icon-eye{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.img-container:hover .icon-eye{
+    z-index: 1;
+}
+
+
+.img-container:hover .eq-img{
+    opacity: 0.5;
+}
+
+
+h1{
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+p{
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 1rem;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem solid white;
+}
+
+
+.flex p{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.flex p:nth-child(1){
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+
+.card-info{
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    margin-bottom: 1rem;
+}
+
+
+.card-info-paragraph{
+    margin-bottom: 1rem;
+}
+
+
+.creator-info{
+    display: flex;
+    align-content: center;
+    gap: 0.5rem;
+}
+
+
+.creator-info p{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.creator-info img{
+    display: flex;
+    align-items: center;
+    width: 14%;
+    border: 1rem;
+    padding: 1.2px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+h1:hover, a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+
+.attribution{
+    margin-left: auto;
+    margin-right: auto;
+    color: hsl(178, 100%, 50%);
+    text-align: center;
+    margin-top: 650px;
+}
+
+
+.Jules{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+
+@media (max-width: 650px){
+    .card{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 1.1rem;
+    }
+}
